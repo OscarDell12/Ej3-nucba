@@ -1,74 +1,76 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Kanit:wght@500&family=Roboto+Slab&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+
     margin: 0;
     padding: 0;
 
-    
+
 }
 
-    
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(0, 0, 0);
     background-size: 0;
-    
+
 }
 
 
 
-.logo{
+.logo {
     width: 130px;
     height: 100px;
     border-radius: 50%;
     display: flex;
-    
+
 
 }
 
-nav{
-display: flex;
-align-items: center;
-justify-content: center;
-margin-right: 300px;
-list-style: none;
-font-size: 20px;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 300px;
+    list-style: none;
+    font-size: 20px;
 
 }
 
-a{
+a {
     text-decoration: none;
     list-style: none;
-    font-family:Georgia, 'Times New Roman', Times, serif
-    
-    
-    
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 nav a {
     font-weight: 800;
     padding-right: 100px;
-    margin-right: 100px;
-    margin-left: 30px;
+    margin: auto 20px;
     color: rgba(243, 234, 234, 0.979);
+    transition: 0.5s;
 }
 
-nav a:hover{
+nav a:hover {
     color: rgb(248, 73, 3);
     position: relative;
     animation: miAnimation 1.5s infinite linear;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 /*portada*/
 
-.contenedor-cover{
-    
+.contenedor-cover {
+
     height: 500px;
     background-image: url(portadaatr.jpg);
     background-size: cover;
     background-position: center;
-    background-color:rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     display: flex;
     flex-direction: column;
@@ -79,17 +81,17 @@ nav a:hover{
     font-size: larger;
 
 
-    
+
 }
 
 
 
-.texto-portada{
-    font-size:25px;
+.texto-portada {
+    font-size: 25px;
     margin-bottom: 1cm;
     color: rgb(238, 70, 18);
 
-   
+
 
 
 
@@ -98,18 +100,18 @@ nav a:hover{
 
 
 
-    
 
 
 
 
-    
-    
-   
-    
 
 
-.contenidoport{
+
+
+
+
+
+.contenidoport {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,8 +122,9 @@ nav a:hover{
 }
 
 
-.boton{
-    border-radius:10px; 
+.boton {
+
+    border-radius: 10px;
     letter-spacing: 6px;
     font-size: 20px;
     text-transform: uppercase;
@@ -129,12 +132,13 @@ nav a:hover{
     padding: 5px 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    
+
     transition: 0.5s;
     overflow: hidden;
 
 }
-.boton:hover{
+
+.boton:hover {
     background-color: rgb(250, 77, 14);
     color: rgb(255, 255, 255);
     position: relative;
@@ -143,52 +147,225 @@ nav a:hover{
     box-shadow: 0 0 10px rgb(250, 77, 14), 0 0 40px rgb(250, 77, 14), 0 0 80px rgb(250, 77, 14);
 
 }
-    
-    
-    
+
+/*Sections*/
+
+section {
+    width: 91%;
+
+    margin: 50px;
+    background-color: antiquewhite;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+
+
+
+
+}
+
+h3 {
+    color: rgb(240, 84, 45);
+
+}
+
+h3:hover {
+    background-color: rgb(185, 40, 40);
+    color: rgb(255, 255, 255);
+
+}
+
+.Cards {
+    display: flex;
+    border: 0 !important;
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 40px rgb(12, 11, 10), 0 0 80px rgb(5, 4, 4);
+    border-radius: 50px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+
+}
+
+.card-img {
+    width: 400px;
+    margin: 80px;
+    height: 300px;
+    border-radius: 30px;
+    border-style: solid;
+    cursor: pointer;
+
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.card-img2 {
+    width: 400px;
+    margin: 80px;
+    height: 300px;
+    border-radius: 30px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.card3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-img3 {
+    width: 400px;
+    margin: 80px;
+    height: 300px;
+    border-radius: 30px;
+    border-style: solid;
+    cursor: pointer;
+
+}
+
+.card-boton {
+    border-radius: 10px;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 30px 0px 10px 0px;
+    padding: 5px 5px;
+
+    color: rgb(250, 74, 29);
+
+    transition: 0.5s;
+    overflow: hidden;
+
+
+}
+
+.card-boton:hover {
+
+    transform: scale(1.6);
 
 
 
 
 
 
+}
+
+footer {
+    height: 60%;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.container-allfooter {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1 {
+    max-width: 400px;
+
+}
+
+.column1 h1 {
+    font-size: 22px;
+}
+
+.column1 p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.column2 {
+    max-width: 400px;
+
+}
+
+.column2 h1 {
+    font-size: 22px;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img {
+    width: 35px;
+    height: 35px;
+    border-radius: 70%;
+
+}
+
+.row label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: rgb(245, 245, 245);
+}
+
+.column3 {
+    max-width: 400px;
+}
+
+.column3 h1 {
+    font-size: 22px;
+}
+
+.row2 {
+    margin-top: 20px;
+}
+
+.row2 img {
+    width: 36px;
+    height: 36px;
+}
+
+.container-footer {
+
+    background-color: black;
 
 
-    
 
+    align-items: center;
+}
 
+.copyright {
+    color: gainsboro
+}
 
-    
-    
+.copyright a {
+    color: rgb(136, 130, 130);
+    font-weight: bold;
+}
 
+.terminos-condiciones a {
+    text-decoration: none;
+    color: gainsboro;
+}
 
+.footer {
+    width: 90%;
 
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-    
-
-    
-
-
-
-
-
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
